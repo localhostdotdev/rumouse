@@ -85,6 +85,7 @@ class RuMouse
   end
 
   def screen_size
+    raise 'disabled because of infinite looping somehow'
     { x: CGEvent::CGDisplayPixelsWide(0),
       y: CGEvent::CGDisplayPixelsHigh(0) }
   end
